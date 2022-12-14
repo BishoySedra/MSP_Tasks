@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border = 1 cellpadding = 10px>
+        <caption>Table Data</caption>
+        <thead>
+            <tr>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+                <th>Options</th>
+                <th>Image</th>
+                <th>Price$</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bishoy</td>
+                <td>Sedra</td>
+                <td>
+                    <input type="button" value="Save">
+                    <input type="button" value="Edit">
+                </td>
+                <td><img src="http://placekitten.com/40/40" alt=""></td>
+                <td>1000$</td>
+            </tr>
+            <tr>
+                <td>Bishoy</td>
+                <td>Sedra</td>
+                <td>
+                    <input type="button" value="Save">
+                    <input type="button" value="Edit">
+                </td>
+                <td><img src="http://placekitten.com/40/40" alt=""></td>
+                <td>1000$</td>
+            </tr>
+            <tr>
+                <td>Bishoy</td>
+                <td>Sedra</td>
+                <td>
+                    <input type="button" value="Save">
+                    <input type="button" value="Edit">
+                </td>
+                <td><img src="http://placekitten.com/40/40" alt=""></td>
+                <td>1000$</td>
+            </tr>
+            <tr>
+                <td>Bishoy</td>
+                <td>Sedra</td>
+                <td>
+                    <input type="button" value="Save">
+                    <input type="button" value="Edit">
+                </td>
+                <td><img src="http://placekitten.com/40/40" alt=""></td>
+                <td>1000$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total</td>
+                <td>4000$</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <form action="emptyPage.html" method="get">
+        <fieldset>
+            <legend>User Data</legend>
+            <label for="userName">User Name:</label>
+            <input type="text" name="userName" id="userName">
+            <br>
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass">
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone">
+            <br>
+            <label for="birthDate">Birthday Date:</label>
+            <input type="date" name="birthDate" id="birthDate">
+            <br>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" id="gender" value="male">
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" id="gender" value="female">
+            <br>
+            <label for="skills">HTML</label>
+            <input type="checkbox" name="skills" id="html" value="HTML">
+            <label for="skills">CSS</label>
+            <input type="checkbox" name="skills" id="html" value="CSS">
+            <label for="skills">JavaScript</label>
+            <input type="checkbox" name="skills" id="html" value="JavaScript">
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>
