@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--whiteColor);
+}
+
+:root {
+    --blueColor: #3a52a4;
+    --greenColor: #44b750;
+    --redColor: #da382d;
+    --whiteColor: #e7ebf1;
+    --borderRadius: 12px;
+    --boxShadow: box-shadow: 0 0 8px 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 100px auto;
+    grid-template-areas: "nav nav" "aside main";
+    row-gap: 15px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: var(--blueColor);
+    padding: 15px;
+    color: var(--whiteColor);
+    font-size: 50px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: var(--whiteColor);
+}
+
+#categoryContainer {
+    background-color: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 0;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.checkbox-list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 210px;
+    row-gap: 5px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price p {
+    font-size: 15px;
+}
+
+#priceRange {
+    width: 100%;
+}
+
+main {
+    grid-area: main;
+    background-color: var(--whiteColor);
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+    margin: auto;
+}
+
+.product {
+    background-color: white;
+    margin: 5px;
+    padding: 15px;
+    border-radius: var(--borderRadius);
+    -webkit-border-radius: var(--borderRadius);
+    -moz-border-radius: var(--borderRadius);
+    -ms-border-radius: var(--borderRadius);
+    -o-border-radius: var(--borderRadius);
+    box-shadow: 0 0 8px 0;
+}
+
+.infoProduct {
+    grid-column: span 2;
+}
+
+.img::after {
+    content: "25$";
+    background-color: var(--greenColor);
+    color: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    box-shadow: 0 0 8px 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.img {
+    position: relative;
+    border-radius: var(--borderRadius);
+}
+
+img {
+    border-radius: 12px;
+}
+
+.product2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    column-gap: 10px;
+}
+
+button {
+    width: 100%;
+    margin: 5px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.btnAdd {
+    background-color: var(--greenColor);
+}
+
+.btnSee {
+    background-color: var(--blueColor);
+}
+
+.info p {
+    font-size: 10px;
+}
+
+.info h2 span {
+    color: var(--redColor);
+}
+
+.info::after {
+    content: "Suggested for you";
+    background-color: var(--redColor);
+    color: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    box-shadow: 0 0 8px 0;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+}
+
+.info {
+    position: relative;
+}
+
+.info .img img{
+    height: 100%;
+    width: 100%;
+}
+
